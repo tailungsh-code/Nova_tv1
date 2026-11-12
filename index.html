@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080B12">
+<title>NOVA TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="sp"><div class="lo">NOVA<b>TV</b></div><p>عالم القنوات بين يديك</p></div>
+<header><a class="lo" href="#home">NOVA<b>TV</b></a><div class="tools"><button data-go="sources" data-ic="plus" aria-label="إضافة قنوات"></button><button data-go="search" data-ic="search" aria-label="بحث"></button><button data-go="settings" data-ic="gear" aria-label="الإعدادات"></button></div></header>
+<main id="view"></main>
+<nav id="tabs"></nav>
+<div id="toast" role="status"></div>
+<section id="pl" hidden>
+<video id="v" playsinline webkit-playsinline preload="auto"></video>
+<div id="ld" hidden><i></i></div>
+<div id="er" hidden><p id="em"></p><button class="bt" data-p="reload">إعادة المحاولة</button></div>
+<div id="ct">
+<div class="tp"><button data-p="back" data-ic="back" aria-label="رجوع"></button><div id="pg"></div><b id="pn"></b><a id="ep" target="_blank" rel="noopener" hidden>دليل البرامج</a><span class="lv" id="lv">مباشر</span></div>
+<div class="md"><button data-p="prev" data-ic="prev" aria-label="القناة السابقة"></button><button data-p="toggle" id="tg" class="big" aria-label="تشغيل أو إيقاف"></button><button data-p="next" data-ic="next" aria-label="القناة التالية"></button></div>
+<div class="bb"><input id="sk" type="range" min="0" max="1000" value="0" hidden aria-label="التقدم"><button data-p="mute" id="mu" aria-label="الصوت"></button><input id="vol" type="range" min="0" max="1" step=".05" value="1" aria-label="مستوى الصوت"><button data-p="reload" data-ic="reload" aria-label="إعادة تحميل البث"></button><button data-p="fs" data-ic="fs" aria-label="ملء الشاشة"></button></div>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+<script src="player.js"></script>
+<script src="sources.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
